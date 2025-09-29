@@ -18,7 +18,7 @@ const Sidebar = () => {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <Link to="category" className="nav-link " aria-current="page">
+            <Link to="category" className="nav-link text-dark" aria-current="page">
               Category
             </Link>
           </li>

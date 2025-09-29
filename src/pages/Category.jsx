@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { createcat, deletecat, getAllcat, updatecat } from '../api/Taskapi'
 import DeleteProductModal from '../components/DeleteProductModal';
-import EditCategoryForm from '../components/EditCategoryForm';
-import AddCategoryModal from '../components/AddCategoryModal';
+import EditCategoryForm from '../components/categoryeditadd/EditCategoryForm';
+import AddCategoryModal from '../components/categoryeditadd/AddCategoryModal';
 
 const Category = () => {
 
@@ -92,9 +92,9 @@ const Category = () => {
       <table className="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Sr.No</th>
             <th scope="col">Task Name</th>
-            <th scope="col">Task Stutus</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -141,6 +141,7 @@ const Category = () => {
       {/* Edit Form */}
       {editingCategory && (
         <EditCategoryForm
+        show={!!editingCategory}
           category={editingCategory}
           onSave={handleUpdateCategory}
           onCancel={() => setEditingCategory(null)}

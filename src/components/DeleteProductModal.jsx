@@ -22,8 +22,8 @@ const DeleteProductModal = ({ show, handleClose, handleDelete, product }) => {
           </div>
           <div className="modal-body">
             <p>
-              Are you sure you want to delete the product{" "}
-              <strong>{product.pName}</strong>?
+              Are you sure you want to delete this
+              {/* <strong>{product.pName}</strong>? */}
             </p>
           </div>
           <div className="modal-footer">

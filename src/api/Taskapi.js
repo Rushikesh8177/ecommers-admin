@@ -17,7 +17,7 @@ export const deleteBrand = (id) => axiosInstance.delete(`/brand/deletebrand/${id
 
 
 export const getAllproducts = () => axiosInstance.get('/product/getAllproducts');
-// export const createBrand = (data) => axiosInstance.post('/brand/createbrand', data);
-// export const getBrandById = (id) => axiosInstance.get(`/brand/getbrandByID/${id}`);
-// export const updateBrand = (id, data) => axiosInstance.put(`/brand/updatebrand/${id}`, data);
+ export const createProduct = (data) => axiosInstance.post('/product/createProduct', data);
+ export const getProductByID = (id) => axiosInstance.get(`/product/getProductByID/${id}`);
+ export const updateProuct = (id, data) => axiosInstance.put(`/product/updateProuct/${id}`, data);
  export const deleteProduct = (id) => axiosInstance.delete(`/product/deleteProduct/${id}`);
