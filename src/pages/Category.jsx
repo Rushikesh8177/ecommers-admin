@@ -103,6 +103,13 @@ const Category = () => {
               <tr key={i}>
                 <th scope="row">{i + 1}</th>
                 <td>{task.cName}</td>
+                <td>{task.cName}
+                    <span>
+                      <img src={task.cImage} alt={task.bName} className="img-fluid" style={{ width: "40px", height: "30px" }} />
+
+                    </span>
+
+                  </td>
 
                 {/* <td><button onClick={() => handleIsComplete(task.id)}>{task.is_complete == 0 ? <span>In progress</span> : <span>Completed</span>}
                     </button></td> */}
